@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+ <body>
+  <form>
+  <style>
+  div.transbox {
+  margin: 30px;
+  background-color: rgba(255, 0, 0, 0.3);
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+  p.oblique {
+    font-style: oblique;
+}
+  input[type="text"]
+{
+    background: LightYellow;
+    border: none;
+}
+  h1 {
+    font-size: 3em;
+    letter-spacing: 3px;
+    text-decoration: overline;
+    }
+    p {
+    font-size: 1em;
+    }
+   body {
+    background-image:URL("main/background.jpg");
+}
+.center {
+    text-align: center;
+}
+</style>
+<div class="center" class="transbox">
+   <h1>TABLE RESERVATION</h1>
+   <p class="oblique"> NAME     :<input type="TEXT" size="40" maxlength="99" /></p>
+   <p class="oblique">AGE       :<input type="TEXT" size="40" maxlength="99" /></p>
+   <p class="oblique">ADDRESS   :<input type="TEXT" size="40" maxlength="99" /></p>
+   <p class="oblique">EMAIL     :<input type="TEXT" size="40" maxlength="99" /></p>
+   <p class="oblique">PHONE NO  :<input type="TEXT" size="40" maxlength="99" /></p>
+   </select>
+   <p style="color: gold">NUMBER OF PEOPLE:</p><select name="NUMBER OF PEOPLE">
+    <option selected="selected">1 - 2</option>
+    <option>3 - 5</option>
+    <option>6 - 9</option>
+    <option>9 AND ABOVE</option>
+   <br/><br/>
+   
+   <input type="button" value="CONFIRM RESERVATION" onclick="feedback()">
+    <script>
+    function feedback()
+    {
+     window.alert("Your Reservation Is Confirmed. Table No. 50-A");
+    }
+    </script>
+   <input type="reset" value="RESET">
+   </div>
+  </form>
+ </body>
+</html>
